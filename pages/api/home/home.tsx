@@ -321,7 +321,8 @@ const Home = ({
         }
       })
     } else {
-      prompts && dispatch({ field: 'prompts', value: JSON.parse(prompts) })
+      dispatch({ field: 'folders', value: localFolders })
+      if (!!prompts) dispatch({ field: 'prompts', value: JSON.parse(prompts) })
     }
 
     const conversationHistory = localStorage.getItem('conversationHistory');
