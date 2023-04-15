@@ -289,13 +289,39 @@ const Home = ({
     }
 
     const folders = localStorage.getItem('folders');
-    if (folders) {
-      dispatch({ field: 'folders', value: JSON.parse(folders) });
-    }
-
     const prompts = localStorage.getItem('prompts');
-    if (prompts) {
-      dispatch({ field: 'prompts', value: JSON.parse(prompts) });
+
+    const localFolders: FolderInterface[] = folders ? JSON.parse(folders) : []
+    const defaultFolderId = 'default-prompts-folder'
+    if (localFolders.findIndex(item => item.id === defaultFolderId) === -1) {
+      const defaultPromptFolder = {
+        id: defaultFolderId,
+        name: '常用提示词大全',
+        type: 'prompt'
+      }
+      dispatch({ field: 'folders', value: [defaultPromptFolder, ...localFolders] })
+      fetch('/api/prompts').then(resp => resp.json()).then(data => {
+
+        const commonPrompts = data.map((item: { id: number, name: string, content: string }) => (
+          {
+            id: item.id,
+            name: item.name,
+            description: '',
+            content: item.content,
+            model: OpenAIModels[defaultModelId],
+            folderId: defaultFolderId
+          }
+        ))
+        if (prompts) {
+          dispatch({ field: 'prompts', value: [...commonPrompts, ...JSON.parse(prompts)] })
+        } else {
+          dispatch({
+            field: 'prompts', value: commonPrompts
+          })
+        }
+      })
+    } else {
+      prompts && dispatch({ field: 'prompts', value: JSON.parse(prompts) })
     }
 
     const conversationHistory = localStorage.getItem('conversationHistory');
@@ -355,7 +381,7 @@ const Home = ({
       }}
     >
       <Head>
-        <title>Chatbot UI</title>
+        <title>Anoyi ChatGPT</title>
         <meta name="description" content="ChatGPT but better." />
         <meta
           name="viewport"

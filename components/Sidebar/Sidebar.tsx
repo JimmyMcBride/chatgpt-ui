@@ -41,6 +41,8 @@ const Sidebar = <T,>({
   handleDrop,
 }: Props<T>) => {
   const { t } = useTranslation('promptbar');
+  const { t: t1 } = useTranslation('sidebar');
+
 
   const allowDrop = (e: any) => {
     e.preventDefault();
@@ -107,7 +109,7 @@ const Sidebar = <T,>({
             <div className="mt-8 select-none text-center text-white opacity-50">
               <IconMistOff className="mx-auto mb-3" />
               <span className="text-[14px] leading-normal">
-                {t('No prompts.')}
+                {side === 'left' ? t1('No conversations.') : t('No prompts.')}
               </span>
             </div>
           )}
