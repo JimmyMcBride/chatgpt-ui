@@ -300,8 +300,8 @@ const Home = ({
         type: 'prompt'
       }
       dispatch({ field: 'folders', value: [defaultPromptFolder, ...localFolders] })
+      localStorage.setItem('folders', JSON.stringify([defaultPromptFolder, ...localFolders]))
       fetch('/api/prompts').then(resp => resp.json()).then(data => {
-
         const commonPrompts = data.map((item: { id: number, name: string, content: string }) => (
           {
             id: item.id,
@@ -314,10 +314,10 @@ const Home = ({
         ))
         if (prompts) {
           dispatch({ field: 'prompts', value: [...commonPrompts, ...JSON.parse(prompts)] })
+          localStorage.setItem('prompts', JSON.stringify([...commonPrompts, ...JSON.parse(prompts)]))
         } else {
-          dispatch({
-            field: 'prompts', value: commonPrompts
-          })
+          dispatch({ field: 'prompts', value: commonPrompts })
+          localStorage.setItem('prompts', JSON.stringify(commonPrompts))
         }
       })
     } else {
