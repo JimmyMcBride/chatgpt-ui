@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-**Welcome to Anoyi ChatGPT!**
+**Welcome to FireGPT ❤️‍🔥!**
 
 We appreciate your interest in contributing to our project.
 

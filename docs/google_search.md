@@ -1,6 +1,6 @@
 # Google Search Tool
 
-Use the Google Search API to search the web in Anoyi ChatGPT.
+Use the Google Search API to search the web in FireGPT ❤️‍🔥.
 
 ## How To Enable
 

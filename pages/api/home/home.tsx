@@ -382,7 +382,7 @@ const Home = ({
       }}
     >
       <Head>
-        <title>Anoyi ChatGPT</title>
+        <title>FireGPT ❤️‍🔥</title>
         <meta name="description" content="ChatGPT but better." />
         <meta
           name="viewport"
