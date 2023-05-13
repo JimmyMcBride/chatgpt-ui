@@ -405,7 +405,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                         <Spinner size="16px" className="mx-auto" />
                       </div>
                     ) : (
-                      <div className='flex flex-row items-center justify-center'>OpenAI ChatGPT <span className='bg-yellow-300 rounded-lg px-2.5 text-yellow-700 ml-2 text-lg py-1'>加强版</span></div>
+                      <div className='flex flex-row items-center justify-center'>FireGPT ❤️‍🔥 <span className='bg-yellow-300 rounded-lg px-2.5 text-yellow-700 ml-2 text-lg py-1'>Plus ULTRA</span></div>
                     )}
                   </div>
 

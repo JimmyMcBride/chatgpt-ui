@@ -361,12 +361,12 @@ export const ChatInput = ({
           )}
         </div>
       </div>
-      <div className="mt-2 px-3 pt-2 space-x-2 pb-3 text-center text-[12px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
-        <a className='border border-blue-400 py-1 px-1.5 rounded bg-blue-400/25 text-blue-400' href="https://anoyi.com" target='_blank'>作者主页</a>
-        <a className='border border-cyan-400 py-1 px-1.5 rounded bg-cyan-400/25 text-cyan-400' href="https://github.com/AnoyiX/chatgpt-ui" target='_blank'>Github 开源</a>
-        <a className='border border-teal-400 py-1 px-1.5 rounded bg-teal-400/25 text-teal-400' href="https://plus.anoyi.com" target='_blank'>ChatGPT Plus 服务</a>
-        <span className='border border-lime-400 py-1 px-1.5 rounded bg-lime-400/25 text-lime-400'>限时免费</span>
-      </div>
+      {/*<div className="mt-2 px-3 pt-2 space-x-2 pb-3 text-center text-[12px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">*/}
+      {/*  <a className='border border-blue-400 py-1 px-1.5 rounded bg-blue-400/25 text-blue-400' href="https://anoyi.com" target='_blank'>作者主页</a>*/}
+      {/*  <a className='border border-cyan-400 py-1 px-1.5 rounded bg-cyan-400/25 text-cyan-400' href="https://github.com/AnoyiX/chatgpt-ui" target='_blank'>Github 开源</a>*/}
+      {/*  <a className='border border-teal-400 py-1 px-1.5 rounded bg-teal-400/25 text-teal-400' href="https://plus.anoyi.com" target='_blank'>ChatGPT Plus 服务</a>*/}
+      {/*  <span className='border border-lime-400 py-1 px-1.5 rounded bg-lime-400/25 text-lime-400'>限时免费</span>*/}
+      {/*</div>*/}
     </div>
   );
 };
