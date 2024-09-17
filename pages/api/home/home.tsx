@@ -296,7 +296,7 @@ const Home = ({
     if (localFolders.findIndex(item => item.id === defaultFolderId) === -1) {
       const defaultPromptFolder = {
         id: defaultFolderId,
-        name: '常用提示词大全',
+        name: 'Prompts',
         type: 'prompt'
       }
       dispatch({ field: 'folders', value: [defaultPromptFolder, ...localFolders] })
@@ -382,7 +382,7 @@ const Home = ({
       }}
     >
       <Head>
-        <title>Anoyi ChatGPT</title>
+        <title>FireGPT ❤️‍🔥</title>
         <meta name="description" content="ChatGPT but better." />
         <meta
           name="viewport"

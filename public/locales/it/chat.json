@@ -23,7 +23,7 @@
   "click if using a .env.local file": "Fai click se stai utilizzando un file .env.local",
   "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "Il limite del messaggio è di {{maxLength}} caratteri. Hai inserito {{valueLength}} caratteri.",
   "Please enter a message": "Per favore, scrivi un messaggio",
-  "Anoyi ChatGPT is an advanced chatbot kit for OpenAI's chat models aiming to mimic ChatGPT's interface and functionality.": "Anoyi ChatGPT è un kit avanzato di chatbot per i modelli di chat di OpenAI che mira a imitare l'interfaccia e le funzionalità di ChatGPT.",
+  "FireGPT ❤️‍🔥 is an advanced chatbot kit for OpenAI's chat models aiming to mimic ChatGPT's interface and functionality.": "FireGPT ❤️‍🔥 è un kit avanzato di chatbot per i modelli di chat di OpenAI che mira a imitare l'interfaccia e le funzionalità di ChatGPT.",
   "Are you sure you want to clear all messages?": "Sei sicuro di voler cancellare tutti i messaggi?",
   "Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.": "Valori più alti come 0,8 renderanno l'output più casuale, mentre valori più bassi come 0,2 lo renderanno più focalizzato e deterministico."
 }

@@ -1,16 +1,16 @@
-# Anoyi ChatGPT
+# FireGPT ❤️‍🔥
 
-Anoyi ChatGPT is an advanced chatbot kit for OpenAI's chat models built on top of [Anoyi ChatGPT Lite](https://github.com/mckaywrigley/chatbot-ui-lite) using Next.js, TypeScript, and Tailwind CSS.
+FireGPT ❤️‍🔥 is an advanced chatbot kit for OpenAI's chat models built on top of [FireGPT ❤️‍🔥 Lite](https://github.com/mckaywrigley/chatbot-ui-lite) using Next.js, TypeScript, and Tailwind CSS.
 
 See a [demo](https://twitter.com/mckaywrigley/status/1640380021423603713?s=46&t=AowqkodyK6B4JccSOxSPew).
 
-![Anoyi ChatGPT](./public/screenshots/screenshot-0402023.jpg)
+![FireGPT ❤️‍🔥](./public/screenshots/screenshot-0402023.jpg)
 
 ## Updates
 
-Anoyi ChatGPT will be updated over time.
+FireGPT ❤️‍🔥 will be updated over time.
 
-Expect frequent improvements.
+Expect frequent improvements! :D
 
 **Next up:**
 
@@ -49,13 +49,13 @@ Modify the system prompt in `utils/server/index.ts`.
 
 **Vercel**
 
-Host your own live version of Anoyi ChatGPT with Vercel.
+Host your own live version of FireGPT ❤️‍🔥 with Vercel.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmckaywrigley%2Fchatbot-ui)
 
 **Replit**
 
-Fork Anoyi ChatGPT on Replit [here](https://replit.com/@MckayWrigley/chatbot-ui-pro?v=1).
+Fork FireGPT ❤️‍🔥 on Replit [here](https://replit.com/@MckayWrigley/chatbot-ui-pro?v=1).
 
 **Docker**
 
